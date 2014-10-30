@@ -1,0 +1,43 @@
+<html lang="en" data-framework="angularjs" ng-app="app">
+<base href="">
+
+<head>
+	
+	<meta charset="utf-8">
+	<title>Angular AML</title>
+		
+	<script src="lib/angular.min.js"></script>
+	<script src="lib/angular-resource.min.js"></script>
+	<script src="lib/angular-route.min.js"></script>
+
+	<script src="lib/moment.js"></script>
+	<script src="lib/angular-moment.js"></script>
+
+	<script src="/angoose/angoose-client.js"></script>
+	
+	<script src="controllers/AppController.js"></script>
+	<script src="controllers/ModListController.js"></script>
+	<script src="controllers/ModEditController.js"></script>
+	<script src="controllers/LoginController.js"></script>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+</head>
+
+
+<body style="margin:25px">
+    <a href="/login">Login</a>
+	<a href="/mods">Mods</a>
+
+	<div class="go-left">
+		<ng-view></ng-view> 
+	</div>
+</body>
+	
+</html>
+
+
+
+

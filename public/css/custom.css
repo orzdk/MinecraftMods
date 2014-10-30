@@ -1,0 +1,75 @@
+body { font-size: 2em; }
+
+.btn {
+    height:30px!important   
+}
+
+.sort-clickable {
+    cursor:pointer;
+}
+
+.form-login {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-login .form-heading{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.form-login .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-login .form-control:focus {
+    z-index: 2;
+}
+.form-login input[type="email"] {
+    margin-bottom: 10px;
+    width: 100%;
+}
+.form-login input[type="password"] {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.sidebar-width {
+    width: 100%;
+    height: 100%;
+}
+
+.go-left {
+    text-align:left
+}
+
+.go-center {
+    text-align:center
+}
+
+.go-right {
+    text-align:right
+}
+
+.boreder{
+    border-style: solid;
+    border-color: #000000;
+    border-width: 2px
+}
+
+.vbottom {
+    vertical-align: bottom;
+}
+
+table {
+    width:100%;
+
+}
+
+.margin10{
+    margin: 3px
+}
