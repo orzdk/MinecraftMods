@@ -1,14 +1,13 @@
-var demoapp = angular.module('app', ['ngResource', 'ngRoute', 'angoose.client', 'angoose.ui', 'angularMoment'])
+var demoapp = angular.module('app', ['ngResource', 'ngRoute', 'angoose.client', 
+								     'angoose.ui', 'angularMoment', 'xeditable', 'pusher-angular'])
 
-.config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider) {
-           
-            $locationProvider.html5Mode({enabled: true, requireBase: false});
-            
-            $routeProvider.when("/", {templateUrl:'/templates/login.tpl', controller: 'LoginController'})
-            .when("/login", {templateUrl:'/templates/login.tpl', controller: 'LoginController'})
-            .when("/mods", {templateUrl:'/templates/modlist.tpl', controller: 'ModListController' })
-            .when("/mods/edit", {templateUrl:'/templates/modedit.tpl', controller: 'ModEditController'})
-            .when("/mods/edit/:id", {templateUrl:'/templates/modedit.tpl', controller: 'ModEditController'});
+.config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider) {  
+	$locationProvider.html5Mode({enabled: true, requireBase: false});
+	$routeProvider.when("/", {templateUrl:'/templates/login.tpl', controller: 'LoginController'})
+	.when("/login", {templateUrl:'/templates/login.tpl', controller: 'LoginController'})
+	.when("/mods", {templateUrl:'/templates/modlist.tpl', controller: 'ModListController' })
+	.when("/mods/edit", {templateUrl:'/templates/modedit.tpl', controller: 'ModEditController'})
+	.when("/mods/edit/:id", {templateUrl:'/templates/modedit.tpl', controller: 'ModEditController'});
 }])
 
 

@@ -1,6 +1,5 @@
 demoapp.controller('LoginController', function($scope, $rootScope, LoginService,$location){
 
-    //enterscope($scope, "LoginCtrl");
     var login = $scope.login = {username: '', password:'' }  
 
     $scope.doLogin = function() {
